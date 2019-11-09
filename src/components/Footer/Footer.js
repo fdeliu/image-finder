@@ -1,11 +1,13 @@
-import React from 'react';
+import React from 'react'
 
-const Footer = () => {
+export default function Footer() {
+    let year = new Date().getFullYear();
     return (
-    <footer className="bg-light" style={{height:'60px'}}>
-        <p className="text-center py-3 text-primary"> &copy; Flamur Deliu</p>
-    </footer>
+        <div className="bg-primary text-white fixed-bottom">
+           <div className="container d-flex">
+                <p className="my-auto">Disclamer: This application uses <em>Pixabay API</em></p>
+                <p className="ml-auto my-auto">{year} &copy; Flamur Deliu</p>
+           </div>
+        </div>
     )
 }
-
-export default Footer;

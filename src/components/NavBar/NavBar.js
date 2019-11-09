@@ -1,14 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-const NavBar = () => {
+ function NavBar() {
     return (
-        <nav className="navbar navbar-dark bg-secondary">
-             <div className="container">
-                <h4 className="navbar-brand">
-                    Online Image Finder  <i className="fa fa-search fa-flip-horizontal"></i> 
-                 </h4>
-             </div>
-        </nav>
+        <div className="navbar search">
+          <h3 className="navbar-brand mx-auto text-white my-auto">
+            Image Finder
+          </h3>
+        </div>
     )
 }
 
